@@ -32,11 +32,3 @@ document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
   });
 
-
-  let hasRefreshed = false;
-  setTimeout(function() {
-      if (!hasRefreshed) {
-          location.reload();
-          hasRefreshed = true; 
-      }
-  }, 5000);
