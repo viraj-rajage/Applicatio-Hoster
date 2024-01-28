@@ -33,6 +33,10 @@ document.addEventListener('contextmenu', function (e) {
   });
 
 
+  let hasRefreshed = false;
   setTimeout(function() {
-    location.reload();
-}, 5000);
+      if (!hasRefreshed) {
+          location.reload();
+          hasRefreshed = true; 
+      }
+  }, 5000);
